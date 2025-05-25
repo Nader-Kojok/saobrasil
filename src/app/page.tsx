@@ -35,9 +35,9 @@ export default function Home() {
             <p className="text-xl mb-8">
               Depuis 20 ans, nous partageons notre passion des pizzas au feu de bois et des bons plats de la mer dans une ambiance chaleureuse et familiale.
             </p>
-            <div className="flex gap-4">
-              <Link href="/menu">
-                <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-6 border-2 border-orange-600 hover:border-orange-700 flex items-center justify-center min-w-[200px]">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/menu" className="w-full sm:w-auto">
+                <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-6 border-2 border-orange-600 hover:border-orange-700 flex items-center justify-center w-full sm:min-w-[200px]">
                   Commander
                 </Button>
               </Link>
@@ -45,7 +45,7 @@ export default function Home() {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="group bg-white/10 backdrop-blur-sm hover:bg-green-600/80 text-lg px-8 py-6 border-2 border-white hover:border-green-600 text-white/90 hover:text-white transition-colors duration-200 flex items-center justify-center min-w-[200px]"
+                  className="group bg-white/10 backdrop-blur-sm hover:bg-green-600/80 text-lg px-8 py-6 border-2 border-white hover:border-green-600 text-white/90 hover:text-white transition-colors duration-200 flex items-center justify-center w-full sm:min-w-[200px]"
                 >
                   Réserver une table
                 </Button>
