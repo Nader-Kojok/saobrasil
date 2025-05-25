@@ -33,7 +33,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-white">
         <Header />
         <main className="flex-grow pt-16 w-full max-w-[100vw] overflow-x-hidden">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto">
             {children}
           </div>
         </main>
