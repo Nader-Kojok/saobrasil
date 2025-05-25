@@ -3,13 +3,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faPizzaSlice } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faPizzaSlice, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useCartStore } from '@/lib/store';
 import { Button } from '@/components/ui/button';
 import CartSidebar from './CartSidebar';
 
 const Header = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { items } = useCartStore();
   const itemCount = items.reduce((acc, item) => acc + item.quantity, 0);
 
@@ -47,19 +48,60 @@ const Header = () => {
               </Link>
             </nav>
 
-            <Button 
-              variant="ghost" 
-              className="relative p-2"
-              aria-label="Ouvrir le panier"
-              onClick={() => setIsCartOpen(true)}
-            >
-              <FontAwesomeIcon icon={faShoppingCart} className="h-6 w-6" />
-              {itemCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-orange-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
-                  {itemCount}
-                </span>
-              )}
-            </Button>
+            <div className="flex items-center space-x-4">
+              <Button 
+                variant="ghost" 
+                className="relative p-2"
+                aria-label="Ouvrir le panier"
+                onClick={() => setIsCartOpen(true)}
+              >
+                <FontAwesomeIcon icon={faShoppingCart} className="h-6 w-6" />
+                {itemCount > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-orange-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                    {itemCount}
+                  </span>
+                )}
+              </Button>
+
+              <Button
+                variant="ghost"
+                className="md:hidden p-2"
+                aria-label="Menu principal"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
+                <FontAwesomeIcon 
+                  icon={isMobileMenuOpen ? faXmark : faBars} 
+                  className="h-6 w-6"
+                />
+              </Button>
+            </div>
+          </div>
+
+          {/* Mobile Menu */}
+          <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+            <nav className="py-4 space-y-4">
+              <Link 
+                href="/" 
+                className="block text-gray-600 hover:text-orange-600 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Accueil
+              </Link>
+              <Link 
+                href="/menu" 
+                className="block text-gray-600 hover:text-orange-600 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Menu
+              </Link>
+              <Link 
+                href="/contact" 
+                className="block text-gray-600 hover:text-orange-600 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </nav>
           </div>
         </div>
       </header>

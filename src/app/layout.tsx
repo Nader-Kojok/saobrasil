@@ -30,10 +30,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col bg-white">
         <Header />
-        <main className="flex-grow pt-16">
-          {children}
+        <main className="flex-grow pt-16 w-full max-w-[100vw] overflow-x-hidden">
+          <div className="container mx-auto px-4">
+            {children}
+          </div>
         </main>
         <Footer />
       </body>
