@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import "./globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { StatusModal } from '@/components/restaurant-status/StatusModal';
 
 config.autoAddCss = false;
 
@@ -33,11 +34,10 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-white">
         <Header />
         <main className="flex-grow pt-16 w-full max-w-[100vw] overflow-x-hidden">
-          <div className="container mx-auto">
-            {children}
-          </div>
+          {children}
         </main>
         <Footer />
+        <StatusModal />
       </body>
     </html>
   );

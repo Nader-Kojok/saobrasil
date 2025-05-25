@@ -7,6 +7,7 @@ import { faShoppingCart, faPizzaSlice, faBars, faXmark } from '@fortawesome/free
 import { useCartStore } from '@/lib/store';
 import { Button } from '@/components/ui/button';
 import CartSidebar from './CartSidebar';
+import { StatusBadge } from '@/components/restaurant-status/StatusBadge';
 
 const Header = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -46,6 +47,7 @@ const Header = () => {
               >
                 Contact
               </Link>
+              <StatusBadge />
             </nav>
 
             <div className="flex items-center space-x-4">
@@ -80,6 +82,9 @@ const Header = () => {
           {/* Mobile Menu */}
           <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
             <nav className="py-4 space-y-4">
+              <div className="mb-4">
+                <StatusBadge />
+              </div>
               <Link 
                 href="/" 
                 className="block text-gray-600 hover:text-orange-600 transition-colors"

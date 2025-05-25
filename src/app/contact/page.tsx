@@ -5,11 +5,11 @@ import { MdLocationOn, MdEmail } from 'react-icons/md';
 
 export default function ContactPage() {
   const handleCall = () => {
-    window.location.href = 'tel:+33123456789'; // Update with actual phone number
+    window.location.href = 'tel:+221338200941';
   };
 
   const handleWhatsApp = () => {
-    window.location.href = 'https://wa.me/33123456789'; // Update with actual WhatsApp number
+    window.location.href = 'https://wa.me/221338200941';
   };
 
   return (
@@ -35,7 +35,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Adresse</h3>
-                    <p className="text-gray-600">123 Rue de Paris, 75000 Paris</p>
+                    <p className="text-gray-600">Route de Ngor, Rte de l&apos;Aeroport, Dakar</p>
                   </div>
                 </div>
 
@@ -45,7 +45,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Téléphone</h3>
-                    <p className="text-gray-600">+33 1 23 45 67 89</p>
+                    <p className="text-gray-600">+221 33 820 09 41</p>
                   </div>
                 </div>
 
@@ -84,16 +84,32 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold font-playfair mb-6">Horaires d&apos;ouverture</h2>
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                  <span className="text-gray-900">Lundi - Vendredi</span>
-                  <span className="text-orange-600 font-medium">10h00 - 22h00</span>
+                  <span className="text-gray-900">Lundi</span>
+                  <span className="text-orange-600 font-medium">Fermé</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-900">Mardi</span>
+                  <span className="text-orange-600 font-medium">12h00 - 00h00</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-900">Mercredi</span>
+                  <span className="text-orange-600 font-medium">12h00 - 00h00</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-900">Jeudi</span>
+                  <span className="text-orange-600 font-medium">12h00 - 00h00</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-900">Vendredi</span>
+                  <span className="text-orange-600 font-medium">11h30 - 00h00</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-100">
                   <span className="text-gray-900">Samedi</span>
-                  <span className="text-orange-600 font-medium">11h00 - 23h00</span>
+                  <span className="text-orange-600 font-medium">12h00 - 00h00</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
                   <span className="text-gray-900">Dimanche</span>
-                  <span className="text-orange-600 font-medium">11h00 - 21h00</span>
+                  <span className="text-orange-600 font-medium">09h00 - 00h00</span>
                 </div>
               </div>
             </div>
@@ -102,7 +118,7 @@ export default function ContactPage() {
           {/* Map */}
           <div className="h-[600px] bg-white rounded-2xl shadow-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615674139!3d48.85837007928757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1647851226132!5w200"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.05876641711175!2d-17.50771900000003!3d14.748554599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec112ea14407dcd%3A0x925c3fa2c9010a4c!2sSao%20Brasil!5e0!3m2!1sfr!2sfr!4v1710347161811!5m2!1sfr!2sfr"
               className="w-full h-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer"
