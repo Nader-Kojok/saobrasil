@@ -30,8 +30,8 @@ export default function ContactPage() {
               
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="bg-orange-100 p-3 rounded-full">
-                    <MdLocationOn className="text-2xl text-orange-600" />
+                  <div className="bg-secondary/20 p-3 rounded-full">
+                    <MdLocationOn className="text-2xl text-secondary" />
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Adresse</h3>
@@ -40,8 +40,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <div className="bg-orange-100 p-3 rounded-full">
-                    <FaPhone className="text-2xl text-orange-600" />
+                  <div className="bg-secondary/20 p-3 rounded-full">
+                    <FaPhone className="text-2xl text-secondary" />
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Téléphone</h3>
@@ -50,8 +50,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <div className="bg-orange-100 p-3 rounded-full">
-                    <MdEmail className="text-2xl text-orange-600" />
+                  <div className="bg-secondary/20 p-3 rounded-full">
+                    <MdEmail className="text-2xl text-secondary" />
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Email</h3>
@@ -63,7 +63,7 @@ export default function ContactPage() {
               <div className="mt-8 flex gap-4">
                 <button
                   onClick={handleCall}
-                  className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors"
+                  className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors"
                   aria-label="Appeler"
                 >
                   <FaPhone className="mr-2" />
@@ -71,7 +71,7 @@ export default function ContactPage() {
                 </button>
                 <button
                   onClick={handleWhatsApp}
-                  className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+                  className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
                   aria-label="WhatsApp"
                 >
                   <FaWhatsapp className="mr-2" />
@@ -85,31 +85,31 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-2 border-b border-gray-100">
                   <span className="text-gray-900">Lundi</span>
-                  <span className="text-orange-600 font-medium">Fermé</span>
+                  <span className="text-red-600 font-medium">Fermé</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-100">
                   <span className="text-gray-900">Mardi</span>
-                  <span className="text-orange-600 font-medium">12h00 - 00h00</span>
+                  <span className="text-primary font-medium">12h00 - 00h00</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-100">
                   <span className="text-gray-900">Mercredi</span>
-                  <span className="text-orange-600 font-medium">12h00 - 00h00</span>
+                  <span className="text-primary font-medium">12h00 - 00h00</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-100">
                   <span className="text-gray-900">Jeudi</span>
-                  <span className="text-orange-600 font-medium">12h00 - 00h00</span>
+                  <span className="text-primary font-medium">12h00 - 00h00</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-100">
                   <span className="text-gray-900">Vendredi</span>
-                  <span className="text-orange-600 font-medium">11h30 - 00h00</span>
+                  <span className="text-primary font-medium">11h30 - 00h00</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-gray-100">
                   <span className="text-gray-900">Samedi</span>
-                  <span className="text-orange-600 font-medium">12h00 - 00h00</span>
+                  <span className="text-primary font-medium">12h00 - 00h00</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
                   <span className="text-gray-900">Dimanche</span>
-                  <span className="text-orange-600 font-medium">09h00 - 00h00</span>
+                  <span className="text-primary font-medium">09h00 - 00h00</span>
                 </div>
               </div>
             </div>

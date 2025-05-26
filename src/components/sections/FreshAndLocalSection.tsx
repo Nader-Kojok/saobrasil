@@ -11,7 +11,7 @@ import {
 
 export const FreshAndLocalSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
+    <section className="py-20 bg-gradient-to-br from-primary/5 to-primary/20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -36,7 +36,7 @@ export const FreshAndLocalSection = () => {
             <div className="space-y-8">
               <div className="flex gap-6 items-start">
                 <div className="bg-white p-4 rounded-full shadow-md">
-                  <FontAwesomeIcon icon={faLeaf} className="h-6 w-6 text-orange-600" />
+                  <FontAwesomeIcon icon={faLeaf} className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Produits Locaux</h3>
@@ -48,7 +48,7 @@ export const FreshAndLocalSection = () => {
 
               <div className="flex gap-6 items-start">
                 <div className="bg-white p-4 rounded-full shadow-md">
-                  <FontAwesomeIcon icon={faHandHoldingHeart} className="h-6 w-6 text-orange-600" />
+                  <FontAwesomeIcon icon={faHandHoldingHeart} className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Fait Maison</h3>
@@ -60,7 +60,7 @@ export const FreshAndLocalSection = () => {
 
               <div className="flex gap-6 items-start">
                 <div className="bg-white p-4 rounded-full shadow-md">
-                  <FontAwesomeIcon icon={faUtensils} className="h-6 w-6 text-orange-600" />
+                  <FontAwesomeIcon icon={faUtensils} className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Cuisson Traditionnelle</h3>
@@ -76,7 +76,7 @@ export const FreshAndLocalSection = () => {
             <Link href="/menu">
               <Button 
                 size="lg" 
-                className="bg-orange-600 hover:bg-orange-700"
+                className="bg-primary hover:bg-primary/90"
               >
                 Découvrir Notre Carte
                 <FontAwesomeIcon icon={faArrowRight} className="ml-2" />

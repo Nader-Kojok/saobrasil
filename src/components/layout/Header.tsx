@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faTree, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useCartStore } from '@/lib/store';
 import { Button } from '@/components/ui/button';
 import CartSidebar from './CartSidebar';
@@ -17,38 +18,44 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <Link 
               href="/" 
-              className="flex items-center space-x-2 text-2xl font-bold text-orange-600"
+              className="flex items-center space-x-2"
             >
-              <span className="font-permanent-marker">SAO BRASIL</span>
+              <Image
+                src="/logo.svg"
+                alt="Sao Brasil Logo"
+                width={150}
+                height={50}
+                priority
+              />
             </Link>
 
             <nav className="hidden md:flex items-center space-x-8">
               <Link 
                 href="/" 
-                className="text-gray-600 hover:text-orange-600 transition-colors"
+                className="text-gray-600 hover:text-primary transition-colors"
               >
                 Accueil
               </Link>
               <Link 
                 href="/about" 
-                className="text-gray-600 hover:text-orange-600 transition-colors"
+                className="text-gray-600 hover:text-primary transition-colors"
               >
                 À Propos
               </Link>
               <Link 
                 href="/menu" 
-                className="text-gray-600 hover:text-orange-600 transition-colors"
+                className="text-gray-600 hover:text-primary transition-colors"
               >
                 Menu
               </Link>
               <Link 
                 href="/contact" 
-                className="text-gray-600 hover:text-orange-600 transition-colors"
+                className="text-gray-600 hover:text-primary transition-colors"
               >
                 Contact
               </Link>
@@ -64,7 +71,7 @@ const Header = () => {
               >
                 <FontAwesomeIcon icon={faShoppingCart} className="h-6 w-6" />
                 {itemCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-orange-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
+                  <span className="absolute -top-1 -right-1 bg-primary text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
                     {itemCount}
                   </span>
                 )}
@@ -92,28 +99,28 @@ const Header = () => {
               </div>
               <Link 
                 href="/" 
-                className="block text-gray-600 hover:text-orange-600 transition-colors"
+                className="block text-gray-600 hover:text-secondary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Accueil
               </Link>
               <Link 
                 href="/about" 
-                className="block text-gray-600 hover:text-orange-600 transition-colors"
+                className="block text-gray-600 hover:text-secondary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 À Propos
               </Link>
               <Link 
                 href="/menu" 
-                className="block text-gray-600 hover:text-orange-600 transition-colors"
+                className="block text-gray-600 hover:text-secondary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Menu
               </Link>
               <Link 
                 href="/contact" 
-                className="block text-gray-600 hover:text-orange-600 transition-colors"
+                className="block text-gray-600 hover:text-secondary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact

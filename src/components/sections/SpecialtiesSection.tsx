@@ -68,7 +68,7 @@ export const SpecialtiesSection = () => {
           <Link href="/menu">
             <Button 
               size="lg" 
-              className="bg-orange-600 hover:bg-orange-700"
+              className="bg-secondary hover:bg-secondary/90"
             >
               Découvrir Notre Carte
               <FontAwesomeIcon icon={faArrowRight} className="ml-2" />

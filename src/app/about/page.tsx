@@ -3,10 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faUtensils, 
   faHeart, 
-  faUsers, 
-  faLeaf,
-  faHandHoldingHeart,
-  faStar
+  faUsers
 } from '@fortawesome/free-solid-svg-icons';
 
 export const metadata = {
@@ -21,7 +18,7 @@ export default function AboutPage() {
       <section className="relative h-[60vh] w-full flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+            src="https://images.unsplash.com/photo-1579684947550-22e945225d9a"
             alt="Sao Brasil Restaurant"
             fill
             className="object-cover brightness-50"
@@ -57,7 +54,7 @@ export default function AboutPage() {
             </div>
             <div className="relative group overflow-hidden aspect-[4/3] rounded-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+                src="https://images.unsplash.com/photo-1552566626-52f8b828add9"
                 alt="Intérieur du restaurant"
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -68,7 +65,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-orange-50">
+      <section className="py-20 bg-secondary/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold font-playfair mb-4">
@@ -80,8 +77,8 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <FontAwesomeIcon icon={faUtensils} className="h-8 w-8 text-orange-600" />
+              <div className="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FontAwesomeIcon icon={faUtensils} className="h-8 w-8 text-secondary" />
               </div>
               <h3 className="text-xl font-bold mb-2">Qualité</h3>
               <p className="text-gray-600">
@@ -89,8 +86,8 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <FontAwesomeIcon icon={faHeart} className="h-8 w-8 text-orange-600" />
+              <div className="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FontAwesomeIcon icon={faHeart} className="h-8 w-8 text-secondary" />
               </div>
               <h3 className="text-xl font-bold mb-2">Passion</h3>
               <p className="text-gray-600">
@@ -98,8 +95,8 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <FontAwesomeIcon icon={faUsers} className="h-8 w-8 text-orange-600" />
+              <div className="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FontAwesomeIcon icon={faUsers} className="h-8 w-8 text-secondary" />
               </div>
               <h3 className="text-xl font-bold mb-2">Convivialité</h3>
               <p className="text-gray-600">
@@ -124,7 +121,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="relative group overflow-hidden aspect-[4/5] rounded-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1581349485608-9469926a8e5e"
+                src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c"
                 alt="Notre Chef"
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -138,7 +135,7 @@ export default function AboutPage() {
             </div>
             <div className="relative group overflow-hidden aspect-[4/5] rounded-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1581349485608-9469926a8e5e"
+                src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf"
                 alt="Notre Équipe"
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -152,7 +149,7 @@ export default function AboutPage() {
             </div>
             <div className="relative group overflow-hidden aspect-[4/5] rounded-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1581349485608-9469926a8e5e"
+                src="https://images.unsplash.com/photo-1544148103-0773bf10d330"
                 alt="Notre Équipe"
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-110"

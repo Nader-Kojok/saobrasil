@@ -199,7 +199,7 @@ const OrderForm = ({ isOpen, onClose }: OrderFormProps) => {
                 <span>{deliveryPrice} F</span>
               </div>
             )}
-            <div className="flex justify-between text-lg font-bold text-orange-600">
+            <div className="flex justify-between text-lg font-bold text-primary">
               <span>Total</span>
               <span>{totalWithDelivery} F</span>
             </div>

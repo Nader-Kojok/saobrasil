@@ -64,11 +64,11 @@ const MenuCard = ({ item }: MenuCardProps) => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <span className="text-lg font-bold text-orange-600">{price} F</span>
+            <span className="text-lg font-bold text-primary">{price} F</span>
           </div>
           <Button 
             onClick={handleAddToCart}
-            className="bg-orange-600 hover:bg-orange-700 transition-colors duration-200"
+            className="bg-primary hover:bg-secondary transition-colors duration-200"
             aria-label={`Ajouter ${item.name} taille ${selectedSize} au panier`}
           >
             <FontAwesomeIcon icon={faCartPlus} className="mr-2" />

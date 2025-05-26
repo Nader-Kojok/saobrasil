@@ -81,7 +81,7 @@ export const StatusModal = () => {
           </p>
           <Button 
             onClick={() => setIsOpen(false)}
-            className="bg-orange-600 hover:bg-orange-700"
+            className="bg-primary hover:bg-secondary"
           >
             J&apos;ai compris
           </Button>

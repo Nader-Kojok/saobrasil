@@ -30,7 +30,7 @@ const CartSidebar = ({ isOpen, onClose }: CartSidebarProps) => {
             <div className="flex flex-col items-center justify-center h-[calc(100vh-200px)]">
               <p className="text-gray-600 mb-4">Votre panier est vide.</p>
               <Link href="/menu">
-                <Button className="bg-orange-600 hover:bg-orange-700" onClick={onClose}>
+                <Button className="bg-primary hover:bg-secondary" onClick={onClose}>
                   Voir le menu
                 </Button>
               </Link>
@@ -57,7 +57,7 @@ const CartSidebar = ({ isOpen, onClose }: CartSidebarProps) => {
                         <div className="flex-grow min-w-0">
                           <h3 className="text-sm font-bold truncate">{item.name}</h3>
                           <p className="text-xs text-gray-600">Taille: {item.size}</p>
-                          <p className="text-sm text-orange-600 font-semibold">{price} F</p>
+                          <p className="text-sm text-primary font-semibold">{price} F</p>
                         </div>
                         <div className="flex items-center gap-2">
                           <Button
@@ -96,11 +96,11 @@ const CartSidebar = ({ isOpen, onClose }: CartSidebarProps) => {
               <div className="mt-8 space-y-6 border-t pt-6">
                 <div className="flex justify-between items-center">
                   <span className="font-semibold text-lg">Total</span>
-                  <span className="font-bold text-xl text-orange-600">{total} F</span>
+                  <span className="font-bold text-xl text-primary">{total} F</span>
                 </div>
                 <div className="space-y-4">
                   <Button
-                    className="w-full bg-orange-600 hover:bg-orange-700 h-12 text-base"
+                    className="w-full bg-primary hover:bg-secondary h-12 text-base"
                     onClick={() => setIsOrderFormOpen(true)}
                   >
                     Commander
