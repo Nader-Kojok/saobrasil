@@ -14,7 +14,7 @@ const OPENING_HOURS: OpeningHours = {
   'thursday': { open: '12:00', close: '00:00' },
   'friday': { open: '11:30', close: '00:00' },
   'saturday': { open: '12:00', close: '00:00' },
-  'sunday': { open: '09:00', close: '00:00' }
+  'sunday': { open: '12:00', close: '00:00' }
 };
 
 const CLOSING_SOON_THRESHOLD = 30; // minutes
@@ -94,15 +94,15 @@ export const getNextOpeningTime = (): string => {
   
   if (currentHours === 'closed') {
     // Trouver le prochain jour d'ouverture
-    const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+    const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
     const dayNames = {
+      'sunday': 'dimanche',
       'monday': 'lundi',
       'tuesday': 'mardi',
       'wednesday': 'mercredi',
       'thursday': 'jeudi',
       'friday': 'vendredi',
-      'saturday': 'samedi',
-      'sunday': 'dimanche'
+      'saturday': 'samedi'
     };
     const currentDayIndex = new Date().getDay();
     

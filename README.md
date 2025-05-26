@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SAOBR - Application Web Next.js Moderne
 
-## Getting Started
+Une application web moderne construite avec Next.js, TypeScript, et TailwindCSS, offrant une expérience utilisateur optimale avec des composants UI modernes et accessibles.
 
-First, run the development server:
+## 🚀 Technologies Principales
 
+- **Framework**: [Next.js 15](https://nextjs.org/) avec TurboPack
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [TailwindCSS](https://tailwindcss.com/)
+- **UI Components**: 
+  - [Radix UI](https://www.radix-ui.com/) pour des composants accessibles
+  - [Lucide React](https://lucide.dev/) pour les icônes
+  - [FontAwesome](https://fontawesome.com/) pour les icônes additionnelles
+- **State Management**: [Zustand](https://zustand-demo.pmnd.rs/)
+- **Form Handling**: [React Hook Form](https://react-hook-form.com/) avec [Zod](https://zod.dev/) pour la validation
+- **Maps Integration**: 
+  - [React Google Maps](https://react-google-maps-api-docs.netlify.app/)
+  - [React Leaflet](https://react-leaflet.js.org/)
+- **Date Handling**: [date-fns](https://date-fns.org/)
+- **Notifications**: [Sonner](https://sonner.emilkowal.ski/)
+
+## 📦 Installation
+
+1. Clonez le repository :
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [url-du-repo]
+cd saobr
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Installez les dépendances :
+```bash
+yarn install
+# ou
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Créez un fichier `.env.local` et configurez les variables d'environnement nécessaires :
+```env
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=votre_clé_api
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔧 Scripts Disponibles
 
-## Learn More
+- **Développement** : Démarrez le serveur de développement avec TurboPack
+```bash
+yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+- **Production** : Construisez et démarrez l'application en production
+```bash
+yarn build
+yarn start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Linting** : Vérifiez le code avec ESLint
+```bash
+yarn lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌟 Fonctionnalités
 
-## Deploy on Vercel
+- 🎨 Interface utilisateur moderne et responsive
+- 🌓 Mode sombre/clair avec next-themes
+- 🗺️ Intégration de cartes (Google Maps et Leaflet)
+- 📱 Composants UI accessibles et réutilisables
+- 🔍 Validation de formulaires robuste
+- 📅 Gestion avancée des dates
+- 🌐 Gestion d'état globale avec Zustand
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔒 Sécurité et Performance
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- TypeScript pour une meilleure sécurité du type
+- ESLint pour la qualité du code
+- TurboPack pour des builds rapides
+- Composants optimisés pour les performances
+
+## 📚 Structure du Projet
+
+```
+saobr/
+├── src/               # Code source principal
+├── public/            # Assets statiques
+├── components/        # Composants réutilisables
+├── styles/           # Styles globaux et configurations Tailwind
+└── ...
+```
+
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
+
+## 📝 License
+
+Ce projet est sous licence [insérer type de licence]
+
+---
+
+Développé avec ❤️ par [votre équipe/organisation]
