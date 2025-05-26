@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faPizzaSlice, 
-  faStar,
+  faBookOpen,
+  faChildren,
 } from '@fortawesome/free-solid-svg-icons';
 
 export const FeaturesSection = () => {
@@ -20,7 +21,7 @@ export const FeaturesSection = () => {
           </div>
           <div className="text-center">
             <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <FontAwesomeIcon icon={faStar} className="h-8 w-8 text-orange-600" />
+              <FontAwesomeIcon icon={faBookOpen} className="h-8 w-8 text-orange-600" />
             </div>
             <h3 className="text-xl font-bold mb-2">Notre Histoire</h3>
             <p className="text-gray-600">
@@ -29,7 +30,7 @@ export const FeaturesSection = () => {
           </div>
           <div className="text-center">
             <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <FontAwesomeIcon icon={faStar} className="h-8 w-8 text-orange-600" />
+              <FontAwesomeIcon icon={faChildren} className="h-8 w-8 text-orange-600" />
             </div>
             <h3 className="text-xl font-bold mb-2">Notre Ambiance</h3>
             <p className="text-gray-600">

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faPizzaSlice, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faTree, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useCartStore } from '@/lib/store';
 import { Button } from '@/components/ui/button';
 import CartSidebar from './CartSidebar';
@@ -24,8 +24,7 @@ const Header = () => {
               href="/" 
               className="flex items-center space-x-2 text-2xl font-bold text-orange-600"
             >
-              <FontAwesomeIcon icon={faPizzaSlice} className="h-6 w-6" />
-              <span className="font-playfair">Sao Brasil</span>
+              <span className="font-permanent-marker">SAO BRASIL</span>
             </Link>
 
             <nav className="hidden md:flex items-center space-x-8">
@@ -34,6 +33,12 @@ const Header = () => {
                 className="text-gray-600 hover:text-orange-600 transition-colors"
               >
                 Accueil
+              </Link>
+              <Link 
+                href="/about" 
+                className="text-gray-600 hover:text-orange-600 transition-colors"
+              >
+                À Propos
               </Link>
               <Link 
                 href="/menu" 
@@ -91,6 +96,13 @@ const Header = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Accueil
+              </Link>
+              <Link 
+                href="/about" 
+                className="block text-gray-600 hover:text-orange-600 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                À Propos
               </Link>
               <Link 
                 href="/menu" 

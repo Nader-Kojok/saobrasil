@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* À propos */}
           <div>
-            <h3 className="text-xl font-bold text-orange-600 mb-4">Sao Brasil</h3>
+            <h3 className="text-xl font-bold text-orange-600 mb-4">SAO BRASIL</h3>
             <p className="text-gray-600 mb-4">
               Depuis 20 ans, nous partageons notre passion des pizzas au feu de bois et des plats de la mer dans une ambiance chaleureuse et familiale à Ngor.
             </p>
@@ -65,6 +65,12 @@ const Footer = () => {
                 className="block text-gray-600 hover:text-orange-600 transition-colors"
               >
                 Accueil
+              </Link>
+              <Link 
+                href="/about"
+                className="block text-gray-600 hover:text-orange-600 transition-colors"
+              >
+                À Propos
               </Link>
               <Link 
                 href="/menu"
